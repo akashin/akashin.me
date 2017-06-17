@@ -3,8 +3,7 @@ layout: full-width
 title: About
 ---
 
-I'm currently a Software Engineer at [DeepMind](https://deepmind.com) working on core research
-infrastructure.
+I'm currently working on core research infrastructure at [DeepMind](https://deepmind.com).
 Prior to coming here I developed distributed computation
 platform [YT](https://habrahabr.ru/company/yandex/blog/311104/) at [Yandex](https://yandex.com/).
 At the same time I studied and teached courses at
