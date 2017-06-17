@@ -21,4 +21,11 @@ D = \left(\begin{matrix}
 \right)
 {% endmath %}
 
+
+Random additional math
+
+{% math %}
+    \sum_{i = 1}^{n} i = \frac{n(n + 1)}{2}
+{% endmath %}
+
 {% fullwidth "assets/img/rhino.png" "Tufte's pet rhino (via <a href=\"//www.edwardtufte.com/tufte/\">Edward Tufte</a>)" %}
