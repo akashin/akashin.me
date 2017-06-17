@@ -5,8 +5,8 @@
     <description>A Jekyll theme for content-rich sites</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 16 Jun 2017 20:44:26 -0400</pubDate>
-    <lastBuildDate>Fri, 16 Jun 2017 20:44:26 -0400</lastBuildDate>
+    <pubDate>Sat, 17 Jun 2017 13:19:15 +0100</pubDate>
+    <lastBuildDate>Sat, 17 Jun 2017 13:19:15 +0100</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
@@ -426,7 +426,7 @@ etc..
    ```&lt;/code&gt; &lt;/pre&gt;
 
 </description>
-        <pubDate>Thu, 19 Feb 2015 16:46:04 -0500</pubDate>
+        <pubDate>Thu, 19 Feb 2015 21:46:04 +0000</pubDate>
         <link>/articles/15/tufte-style-jekyll-blog</link>
         <guid isPermaLink="true">/articles/15/tufte-style-jekyll-blog</guid>
         
@@ -465,7 +465,7 @@ D = \left(\begin{matrix}
 
 &lt;figure class=&quot;fullwidth&quot;&gt;&lt;img src=&quot;/assets/img/rhino.png&quot; /&gt;&lt;figcaption&gt;Tufte's pet rhino (via &lt;a href=&quot;//www.edwardtufte.com/tufte/&quot;&gt;Edward Tufte&lt;/a&gt;)&lt;/figcaption&gt;&lt;/figure&gt;
 </description>
-        <pubDate>Tue, 17 Feb 2015 06:04:01 -0500</pubDate>
+        <pubDate>Tue, 17 Feb 2015 11:04:01 +0000</pubDate>
         <link>/articles/15/Edge-Cases</link>
         <guid isPermaLink="true">/articles/15/Edge-Cases</guid>
         
@@ -490,7 +490,7 @@ To add new posts, simply add a file in the &lt;code class=&quot;highlighter-roug
 &lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;.&lt;/p&gt;
 
 </description>
-        <pubDate>Sun, 08 Feb 2015 08:06:04 -0500</pubDate>
+        <pubDate>Sun, 08 Feb 2015 13:06:04 +0000</pubDate>
         <link>/articles/15/welcome-to-jekyll</link>
         <guid isPermaLink="true">/articles/15/welcome-to-jekyll</guid>
         
