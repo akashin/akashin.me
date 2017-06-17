@@ -25,7 +25,7 @@ task :publish => [:generate] do
     system "mv #{tmp}/* ."
     message = "Site updated at #{Time.now.utc}"
     system "git add ."
-    system "git commit --allow-empty #{message.shellescape}"
+    system "git commit --allow-empty -m #{message.shellescape}"
     system "git push origin gh-pages"
     system "git checkout master"
     system "echo yolo"
