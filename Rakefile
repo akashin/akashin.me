@@ -20,7 +20,7 @@ task :publish => [:generate] do
   Dir.mktmpdir do |tmp|
     system "git push origin master"
     system "mv _site/* #{tmp}"
-    system "git checkout -B gh-pages"
+    system "git checkout gh-pages"
     system "rm -rf *"
     system "mv #{tmp}/* ."
     message = "Site updated at #{Time.now.utc}"
