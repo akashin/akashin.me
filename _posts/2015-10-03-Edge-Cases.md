@@ -22,7 +22,7 @@ D = \left(\begin{matrix}
 {% endmath %}
 
 
-Random additional math
+Random additional math formula
 
 {% math %}
     \sum_{i = 1}^{n} i = \frac{n(n + 1)}{2}
