@@ -17,7 +17,7 @@ post:
 page:
   template: _page.txt
   extension: md
-editor: gvim
+editor: nvim
 git:
   branch: master
 transfer:
