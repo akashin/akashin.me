@@ -21,15 +21,15 @@ function tmx {
 }
 ```
 
-First, we list all the available tmux sessions and then use `grep` to look for the one, that has provided name.
-If this search succeeds, the return code of `grep` is zero and we go to the first branch of `if` statement
-and connect to existing session.
+First, we list all available tmux sessions and then use `grep` to look for the one, that has provided name.
+If this search succeeds, the return code of `grep` is zero and we go to the first branch of the `if`
+statement and connect to the existing session.
 Otherwise, the return code is non-zero and we go to the second branch that creates a new session.
 
 There is one tricky corner-case that needs to be considered, and I leave it to readers to
 discover it :) {% sidenote "1" "what happens if there are currently no sessions?" %}
 
-Connecting to a tmux session *Blog* is as easy as:
+With this alias, connecting to a tmux session *Blog* is as easy as:
 ```bash
 > tmx Blog
 ```
@@ -45,5 +45,6 @@ For this to work don't forget to put `tmx` alias to the top of `.bashrc` if you'
 
 Next step would be to extend `tmx` to take arbitrary number of arguments, but honestly, I haven't yet encountered situation when I need it.
 
-**P.S.**
 This and other useful aliases that I'm using everyday can be found in my [dotfiles](https://github.com/akashin/dotfiles/blob/master/zsh/zshrc.symlink) repository on Github.
+
+Thank you for reading, stay tuned!
