@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Useful tmux alias"
+title: "Neat tmux alias"
 date:   2017-06-25 12:00:00
 categories: post
 ---
 
-Trying to streamline my workflow with tmux I've built a useful bash alias **`tmx`**.
+{% newthought "Trying to streamline" %} my workflow with tmux I've built a useful bash alias **`tmx`**.
 This alias takes a single argument - name of the session, and connects to the session if it already exists, or creates a new session with this name.
 The motivation behind it is that it is shorter (no need to remember and type `attach -t` or `new-session -s`), and also involves less cognitive overhead (no conditional thinking).
 
