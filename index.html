@@ -75,29 +75,6 @@
           
         <li class="listing">
           <hr class="slender">
-          <a href="/articles/17/oh-cmon-bash"><h3 class="contrast">Oh c'mon, Bash!</h3></a>
-          <br><span class="smaller">June 21, 2017</span>  <br/>
-          <div><p>Trying to streamline my workflow with tmux I’ve found one more weirdness (surprise!) in Bash.</p>
-
-<p>I was trying to build a command alias <code class="highlighter-rouge">tmx</code> that will take a single argument - name of the session, and connect to the session if it already exists, or create a new session with this name. This is both shorter (no need to type <code class="highlighter-rouge">attach -t</code>), and involves less cognitive overhead.</p>
-
-<p>My first try was the following:</p>
-
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="k">function </span>tmx <span class="o">{</span>
-    <span class="nv">name</span><span class="o">=</span><span class="nv">$1</span>
-    <span class="k">if </span>tmux list-sessions | grep -qv <span class="s2">"^</span><span class="k">${</span><span class="nv">name</span><span class="k">}</span><span class="s2">:"</span>; <span class="k">then
-        </span>tmux attach -t <span class="s2">"</span><span class="k">${</span><span class="nv">name</span><span class="k">}</span><span class="s2">"</span>
-    <span class="k">else
-        </span>tmux new-session -s <span class="s2">"</span><span class="k">${</span><span class="nv">name</span><span class="k">}</span><span class="s2">"</span>
-    <span class="k">fi</span>
-<span class="o">}</span>
-</code></pre>
-</div>
-</div> 
-        </li>
-          
-        <li class="listing">
-          <hr class="slender">
           <a href="/articles/17/lets-start"><h3 class="contrast">Let's start!</h3></a>
           <br><span class="smaller">June 17, 2017</span>  <br/>
           <div><p>After quite some time I finally decided to build a personal page and blog.
