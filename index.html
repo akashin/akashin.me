@@ -88,9 +88,12 @@
           <hr class="slender">
           <a href="/articles/17/useful-tmux-alias"><h3 class="contrast">Neat tmux alias</h3></a>
           <br><span class="smaller">June 25, 2017</span>  <br/>
-          <div><p><span class="newthought">Trying to streamline</span>  my workflow with tmux I’ve built a useful bash alias <strong><code class="highlighter-rouge">tmx</code></strong>.
-This alias takes a single argument - name of the session, and connects to the session if it already exists, or creates a new session with this name.
-The motivation behind it is that it is shorter (no need to remember and type <code class="highlighter-rouge">attach -t</code> or <code class="highlighter-rouge">new-session -s</code>), and also involves less cognitive overhead (no conditional thinking).</p>
+          <div><p><span class="newthought">Trying to streamline</span>  my workflow with <a href="https://danielmiessler.com/study/tmux/">tmux</a>
+I’ve built a useful bash alias <strong><code class="highlighter-rouge">tmx</code></strong>.
+This alias takes a single argument - name of the session, and connects to the session if it already
+exists, or creates a new session with this name. The motivation behind it is that it is shorter
+(no need to remember and type <code class="highlighter-rouge">attach -t</code> or <code class="highlighter-rouge">new-session -s</code>), and also involves less cognitive
+overhead (no conditional thinking).</p>
 
 <p>Here is a snippet of shell code that you can add to your <code class="highlighter-rouge">.bashrc</code>/<code class="highlighter-rouge">.zshrc</code>/etc:</p>
 <div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="k">function </span>tmx <span class="o">{</span>

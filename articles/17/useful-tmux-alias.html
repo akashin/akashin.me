@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Neat tmux alias</title>
-  <meta name="description" content="Trying to streamline  my workflow with tmux I’ve built a useful bash alias tmx.This alias takes a single argument - name of the session, and connects to the ...">
+  <meta name="description" content="Trying to streamline  my workflow with tmuxI’ve built a useful bash alias tmx.This alias takes a single argument - name of the session, and connects to the s...">
 
   <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
   
@@ -84,9 +84,12 @@
       <h1>Neat tmux alias</h1>
 <p class="subtitle">June 25, 2017</p>
 
-<p><span class="newthought">Trying to streamline</span>  my workflow with tmux I’ve built a useful bash alias <strong><code class="highlighter-rouge">tmx</code></strong>.
-This alias takes a single argument - name of the session, and connects to the session if it already exists, or creates a new session with this name.
-The motivation behind it is that it is shorter (no need to remember and type <code class="highlighter-rouge">attach -t</code> or <code class="highlighter-rouge">new-session -s</code>), and also involves less cognitive overhead (no conditional thinking).</p>
+<p><span class="newthought">Trying to streamline</span>  my workflow with <a href="https://danielmiessler.com/study/tmux/">tmux</a>
+I’ve built a useful bash alias <strong><code class="highlighter-rouge">tmx</code></strong>.
+This alias takes a single argument - name of the session, and connects to the session if it already
+exists, or creates a new session with this name. The motivation behind it is that it is shorter
+(no need to remember and type <code class="highlighter-rouge">attach -t</code> or <code class="highlighter-rouge">new-session -s</code>), and also involves less cognitive
+overhead (no conditional thinking).</p>
 
 <p>Here is a snippet of shell code that you can add to your <code class="highlighter-rouge">.bashrc</code>/<code class="highlighter-rouge">.zshrc</code>/etc:</p>
 <div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="k">function </span>tmx <span class="o">{</span>
