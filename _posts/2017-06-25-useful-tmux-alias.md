@@ -6,7 +6,7 @@ categories: post
 ---
 
 Trying to streamline my workflow with tmux I've built a useful bash alias **`tmx`**.
-This alias that takes a single argument - name of the session, and connects to the session if it already exists, or create a new session with this name.
+This alias takes a single argument - name of the session, and connects to the session if it already exists, or creates a new session with this name.
 The motivation behind it is that it is shorter (no need to remember and type `attach -t` or `new-session -s`), and also involves less cognitive overhead (no conditional thinking).
 
 Here is a snippet of shell code that you can add to your `.bashrc`/`.zshrc`/etc:
@@ -20,6 +20,14 @@ function tmx {
     fi
 }
 ```
+
+First, we list all the available tmux sessions and then use `grep` to look for the one, that has provided name.
+If this search succeeds, the return code of `grep` is zero and we go to the first branch of `if` statement
+and connect to existing session.
+Otherwise, the return code is non-zero and we go to the second branch that creates a new session.
+
+There is one tricky corner-case that needs to be considered, and I leave it to readers to
+discover it :) {% sidenote "1" "what happens if there are currently no sessions?" %}
 
 Connecting to a tmux session *Blog* is as easy as:
 ```bash
