@@ -10,16 +10,14 @@ Trying to streamline my workflow with tmux I've found one more weirdness (surpri
 I was trying to build a command alias `tmx` that will take a single argument - name of the session, and connect to the session if it already exists, or create a new session with this name. This is both shorter (no need to type `attach -t`), and involves less cognitive overhead.
 
 My first try was the following:
-```bash
 
+```bash
 function tmx {
     name=$1
-    if tmux list-sessions | grep -q -v "^${name}:$"; then
+    if tmux list-sessions | grep -qv "^${name}:"; then
         tmux attach -t "${name}"
     else
         tmux new-session -s "${name}"
     fi
 }
 ```
-
-
