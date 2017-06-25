@@ -5,9 +5,55 @@
     <description>A Jekyll theme for content-rich sites</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 25 Jun 2017 15:56:29 +0100</pubDate>
-    <lastBuildDate>Sun, 25 Jun 2017 15:56:29 +0100</lastBuildDate>
+    <pubDate>Sun, 25 Jun 2017 17:13:42 +0100</pubDate>
+    <lastBuildDate>Sun, 25 Jun 2017 17:13:42 +0100</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>Useful tmux alias</title>
+        <description>&lt;p&gt;Trying to streamline my workflow with tmux I’ve built a useful bash alias &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;tmx&lt;/code&gt;&lt;/strong&gt;.
+This alias that takes a single argument - name of the session, and connects to the session if it already exists, or create a new session with this name.
+The motivation behind it is that it is shorter (no need to remember and type &lt;code class=&quot;highlighter-rouge&quot;&gt;attach -t&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;new-session -s&lt;/code&gt;), and also involves less cognitive overhead (no conditional thinking).&lt;/p&gt;
+
+&lt;p&gt;Here is a snippet of shell code that you can add to your &lt;code class=&quot;highlighter-rouge&quot;&gt;.bashrc&lt;/code&gt;/&lt;code class=&quot;highlighter-rouge&quot;&gt;.zshrc&lt;/code&gt;/etc:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;function &lt;/span&gt;tmx &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if &lt;/span&gt;tmux list-sessions | grep -q &lt;span class=&quot;s2&quot;&gt;&quot;^&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;:&quot;&lt;/span&gt;; &lt;span class=&quot;k&quot;&gt;then
+        &lt;/span&gt;tmux attach -t &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;else
+        &lt;/span&gt;tmux new-session -s &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;fi&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Connecting to a tmux session &lt;em&gt;Blog&lt;/em&gt; is as easy as:&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;&amp;gt; &lt;/span&gt;tmx Blog
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;One additional big plus of this alias comes if you’re using tmux over ssh connection (and who doesn’t? :)).
+To connect or create a tmux session &lt;em&gt;Blog&lt;/em&gt; on the remote machine you can use:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;&amp;gt; &lt;/span&gt;ssh &amp;lt;hostname&amp;gt; -t tmx Blog
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;For this to work don’t forget to put &lt;code class=&quot;highlighter-rouge&quot;&gt;tmx&lt;/code&gt; alias to the top of &lt;code class=&quot;highlighter-rouge&quot;&gt;.bashrc&lt;/code&gt; if you’re using bash or to &lt;code class=&quot;highlighter-rouge&quot;&gt;.zshenv&lt;/code&gt; if you’re using zsh.&lt;/p&gt;
+
+&lt;p&gt;Next step would be to extend &lt;code class=&quot;highlighter-rouge&quot;&gt;tmx&lt;/code&gt; to take arbitrary number of arguments, but honestly, I haven’t yet encountered situation when I need it.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;P.S.&lt;/strong&gt;
+This and other useful aliases that I’m using everyday can be found in my &lt;a href=&quot;https://github.com/akashin/dotfiles/blob/master/zsh/zshrc.symlink&quot;&gt;dotfiles&lt;/a&gt; repository on Github.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 25 Jun 2017 13:00:00 +0100</pubDate>
+        <link>/articles/17/useful-tmux-alias</link>
+        <guid isPermaLink="true">/articles/17/useful-tmux-alias</guid>
+        
+        
+        <category>post</category>
+        
+      </item>
     
       <item>
         <title>Let's start!</title>
