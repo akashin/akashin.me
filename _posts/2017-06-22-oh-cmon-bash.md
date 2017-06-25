@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Oh c'mon, Bash!"
-date:   2017-06-21 12:00:00
+date:   2017-06-26 12:00:00
 categories: post
 ---
 
