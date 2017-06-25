@@ -78,7 +78,7 @@
           <a href="/articles/17/useful-tmux-alias"><h3 class="contrast">Useful tmux alias</h3></a>
           <br><span class="smaller">June 25, 2017</span>  <br/>
           <div><p>Trying to streamline my workflow with tmux I’ve built a useful bash alias <strong><code class="highlighter-rouge">tmx</code></strong>.
-This alias that takes a single argument - name of the session, and connects to the session if it already exists, or create a new session with this name.
+This alias takes a single argument - name of the session, and connects to the session if it already exists, or creates a new session with this name.
 The motivation behind it is that it is shorter (no need to remember and type <code class="highlighter-rouge">attach -t</code> or <code class="highlighter-rouge">new-session -s</code>), and also involves less cognitive overhead (no conditional thinking).</p>
 
 <p>Here is a snippet of shell code that you can add to your <code class="highlighter-rouge">.bashrc</code>/<code class="highlighter-rouge">.zshrc</code>/etc:</p>
@@ -92,6 +92,14 @@ The motivation behind it is that it is shorter (no need to remember and type <co
 <span class="o">}</span>
 </code></pre>
 </div>
+
+<p>First, we list all the available tmux sessions and then use <code class="highlighter-rouge">grep</code> to look for the one, that has provided name.
+If this search succeeds, the return code of <code class="highlighter-rouge">grep</code> is zero and we go to the first branch of <code class="highlighter-rouge">if</code> statement
+and connect to existing session.
+Otherwise, the return code is non-zero and we go to the second branch that creates a new session.</p>
+
+<p>There is one tricky corner-case that needs to be considered, and I leave it to readers to
+discover it :) <label for="1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="1" class="margin-toggle" /><span class="sidenote">what happens if there are currently no sessions? </span></p>
 
 <p>Connecting to a tmux session <em>Blog</em> is as easy as:</p>
 <div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">&gt; </span>tmx Blog

@@ -5,14 +5,14 @@
     <description>A Jekyll theme for content-rich sites</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 25 Jun 2017 17:13:42 +0100</pubDate>
-    <lastBuildDate>Sun, 25 Jun 2017 17:13:42 +0100</lastBuildDate>
+    <pubDate>Sun, 25 Jun 2017 17:24:01 +0100</pubDate>
+    <lastBuildDate>Sun, 25 Jun 2017 17:24:01 +0100</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
         <title>Useful tmux alias</title>
         <description>&lt;p&gt;Trying to streamline my workflow with tmux I’ve built a useful bash alias &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;tmx&lt;/code&gt;&lt;/strong&gt;.
-This alias that takes a single argument - name of the session, and connects to the session if it already exists, or create a new session with this name.
+This alias takes a single argument - name of the session, and connects to the session if it already exists, or creates a new session with this name.
 The motivation behind it is that it is shorter (no need to remember and type &lt;code class=&quot;highlighter-rouge&quot;&gt;attach -t&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;new-session -s&lt;/code&gt;), and also involves less cognitive overhead (no conditional thinking).&lt;/p&gt;
 
 &lt;p&gt;Here is a snippet of shell code that you can add to your &lt;code class=&quot;highlighter-rouge&quot;&gt;.bashrc&lt;/code&gt;/&lt;code class=&quot;highlighter-rouge&quot;&gt;.zshrc&lt;/code&gt;/etc:&lt;/p&gt;
@@ -26,6 +26,14 @@ The motivation behind it is that it is shorter (no need to remember and type &lt
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
+
+&lt;p&gt;First, we list all the available tmux sessions and then use &lt;code class=&quot;highlighter-rouge&quot;&gt;grep&lt;/code&gt; to look for the one, that has provided name.
+If this search succeeds, the return code of &lt;code class=&quot;highlighter-rouge&quot;&gt;grep&lt;/code&gt; is zero and we go to the first branch of &lt;code class=&quot;highlighter-rouge&quot;&gt;if&lt;/code&gt; statement
+and connect to existing session.
+Otherwise, the return code is non-zero and we go to the second branch that creates a new session.&lt;/p&gt;
+
+&lt;p&gt;There is one tricky corner-case that needs to be considered, and I leave it to readers to
+discover it :) &lt;label for=&quot;1&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;1&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;what happens if there are currently no sessions? &lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;Connecting to a tmux session &lt;em&gt;Blog&lt;/em&gt; is as easy as:&lt;/p&gt;
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;&amp;gt; &lt;/span&gt;tmx Blog
