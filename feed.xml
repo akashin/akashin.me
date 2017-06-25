@@ -5,8 +5,8 @@
     <description>A Jekyll theme for content-rich sites</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 25 Jun 2017 17:24:01 +0100</pubDate>
-    <lastBuildDate>Sun, 25 Jun 2017 17:24:01 +0100</lastBuildDate>
+    <pubDate>Sun, 25 Jun 2017 17:29:06 +0100</pubDate>
+    <lastBuildDate>Sun, 25 Jun 2017 17:29:06 +0100</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
@@ -27,15 +27,15 @@ The motivation behind it is that it is shorter (no need to remember and type &lt
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;First, we list all the available tmux sessions and then use &lt;code class=&quot;highlighter-rouge&quot;&gt;grep&lt;/code&gt; to look for the one, that has provided name.
-If this search succeeds, the return code of &lt;code class=&quot;highlighter-rouge&quot;&gt;grep&lt;/code&gt; is zero and we go to the first branch of &lt;code class=&quot;highlighter-rouge&quot;&gt;if&lt;/code&gt; statement
-and connect to existing session.
+&lt;p&gt;First, we list all available tmux sessions and then use &lt;code class=&quot;highlighter-rouge&quot;&gt;grep&lt;/code&gt; to look for the one, that has provided name.
+If this search succeeds, the return code of &lt;code class=&quot;highlighter-rouge&quot;&gt;grep&lt;/code&gt; is zero and we go to the first branch of the &lt;code class=&quot;highlighter-rouge&quot;&gt;if&lt;/code&gt;
+statement and connect to the existing session.
 Otherwise, the return code is non-zero and we go to the second branch that creates a new session.&lt;/p&gt;
 
 &lt;p&gt;There is one tricky corner-case that needs to be considered, and I leave it to readers to
 discover it :) &lt;label for=&quot;1&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;1&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;what happens if there are currently no sessions? &lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;Connecting to a tmux session &lt;em&gt;Blog&lt;/em&gt; is as easy as:&lt;/p&gt;
+&lt;p&gt;With this alias, connecting to a tmux session &lt;em&gt;Blog&lt;/em&gt; is as easy as:&lt;/p&gt;
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;&amp;gt; &lt;/span&gt;tmx Blog
 &lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
@@ -51,8 +51,9 @@ To connect or create a tmux session &lt;em&gt;Blog&lt;/em&gt; on the remote mach
 
 &lt;p&gt;Next step would be to extend &lt;code class=&quot;highlighter-rouge&quot;&gt;tmx&lt;/code&gt; to take arbitrary number of arguments, but honestly, I haven’t yet encountered situation when I need it.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;P.S.&lt;/strong&gt;
-This and other useful aliases that I’m using everyday can be found in my &lt;a href=&quot;https://github.com/akashin/dotfiles/blob/master/zsh/zshrc.symlink&quot;&gt;dotfiles&lt;/a&gt; repository on Github.&lt;/p&gt;
+&lt;p&gt;This and other useful aliases that I’m using everyday can be found in my &lt;a href=&quot;https://github.com/akashin/dotfiles/blob/master/zsh/zshrc.symlink&quot;&gt;dotfiles&lt;/a&gt; repository on Github.&lt;/p&gt;
+
+&lt;p&gt;Thank you for reading, stay tuned!&lt;/p&gt;
 </description>
         <pubDate>Sun, 25 Jun 2017 13:00:00 +0100</pubDate>
         <link>/articles/17/useful-tmux-alias</link>

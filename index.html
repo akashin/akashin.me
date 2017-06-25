@@ -93,15 +93,15 @@ The motivation behind it is that it is shorter (no need to remember and type <co
 </code></pre>
 </div>
 
-<p>First, we list all the available tmux sessions and then use <code class="highlighter-rouge">grep</code> to look for the one, that has provided name.
-If this search succeeds, the return code of <code class="highlighter-rouge">grep</code> is zero and we go to the first branch of <code class="highlighter-rouge">if</code> statement
-and connect to existing session.
+<p>First, we list all available tmux sessions and then use <code class="highlighter-rouge">grep</code> to look for the one, that has provided name.
+If this search succeeds, the return code of <code class="highlighter-rouge">grep</code> is zero and we go to the first branch of the <code class="highlighter-rouge">if</code>
+statement and connect to the existing session.
 Otherwise, the return code is non-zero and we go to the second branch that creates a new session.</p>
 
 <p>There is one tricky corner-case that needs to be considered, and I leave it to readers to
 discover it :) <label for="1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="1" class="margin-toggle" /><span class="sidenote">what happens if there are currently no sessions? </span></p>
 
-<p>Connecting to a tmux session <em>Blog</em> is as easy as:</p>
+<p>With this alias, connecting to a tmux session <em>Blog</em> is as easy as:</p>
 <div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">&gt; </span>tmx Blog
 </code></pre>
 </div>
@@ -117,8 +117,9 @@ To connect or create a tmux session <em>Blog</em> on the remote machine you can 
 
 <p>Next step would be to extend <code class="highlighter-rouge">tmx</code> to take arbitrary number of arguments, but honestly, I haven’t yet encountered situation when I need it.</p>
 
-<p><strong>P.S.</strong>
-This and other useful aliases that I’m using everyday can be found in my <a href="https://github.com/akashin/dotfiles/blob/master/zsh/zshrc.symlink">dotfiles</a> repository on Github.</p>
+<p>This and other useful aliases that I’m using everyday can be found in my <a href="https://github.com/akashin/dotfiles/blob/master/zsh/zshrc.symlink">dotfiles</a> repository on Github.</p>
+
+<p>Thank you for reading, stay tuned!</p>
 </div> 
         </li>
           
