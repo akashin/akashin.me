@@ -5,13 +5,13 @@
     <description>A Jekyll theme for content-rich sites</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 25 Jun 2017 17:29:06 +0100</pubDate>
-    <lastBuildDate>Sun, 25 Jun 2017 17:29:06 +0100</lastBuildDate>
+    <pubDate>Sun, 25 Jun 2017 17:31:07 +0100</pubDate>
+    <lastBuildDate>Sun, 25 Jun 2017 17:31:07 +0100</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
-        <title>Useful tmux alias</title>
-        <description>&lt;p&gt;Trying to streamline my workflow with tmux I’ve built a useful bash alias &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;tmx&lt;/code&gt;&lt;/strong&gt;.
+        <title>Neat tmux alias</title>
+        <description>&lt;p&gt;&lt;span class=&quot;newthought&quot;&gt;Trying to streamline&lt;/span&gt;  my workflow with tmux I’ve built a useful bash alias &lt;strong&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;tmx&lt;/code&gt;&lt;/strong&gt;.
 This alias takes a single argument - name of the session, and connects to the session if it already exists, or creates a new session with this name.
 The motivation behind it is that it is shorter (no need to remember and type &lt;code class=&quot;highlighter-rouge&quot;&gt;attach -t&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;new-session -s&lt;/code&gt;), and also involves less cognitive overhead (no conditional thinking).&lt;/p&gt;
 
