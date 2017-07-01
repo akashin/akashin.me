@@ -5,9 +5,9 @@
     <description>A Jekyll theme for content-rich sites</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 25 Jun 2017 18:54:26 +0100</pubDate>
-    <lastBuildDate>Sun, 25 Jun 2017 18:54:26 +0100</lastBuildDate>
-    <generator>Jekyll v3.4.3</generator>
+    <pubDate>Sat, 01 Jul 2017 16:50:06 +0100</pubDate>
+    <lastBuildDate>Sat, 01 Jul 2017 16:50:06 +0100</lastBuildDate>
+    <generator>Jekyll v3.5.0</generator>
     
       <item>
         <title>Neat tmux alias</title>
