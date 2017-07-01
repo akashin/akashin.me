@@ -18,6 +18,7 @@ sudo gem install jekyll
 ```sh
 sudo gem install bundler
 bundle install
+bundle clean --force
 ```
 
 4. Fire Jekyll to see the web page:
