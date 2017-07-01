@@ -2,6 +2,7 @@
 layout: post
 title: "Neat tmux alias"
 date:   2017-06-25 12:00:00
+comments: true
 categories: post
 ---
 
