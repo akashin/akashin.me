@@ -6,7 +6,10 @@ To render this website on Ubuntu 16.04 you need:
 
 1. Install ruby-dev
 ```sh
+# On Ubuntu
 sudo apt-get install ruby-dev
+# On OSX
+brew install ruby
 ```
 
 2. Install Jekyll gem
