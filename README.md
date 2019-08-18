@@ -14,12 +14,12 @@ brew install ruby
 
 2. Install Jekyll gem
 ```sh
-sudo gem install jekyll
+gem install jekyll --user-install
 ```
 
 3. Install tufte-jekyll requirements:
 ```sh
-sudo gem install bundler
+gem install bundler --user-install
 bundle install
 bundle clean --force
 ```
