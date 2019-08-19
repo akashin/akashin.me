@@ -27,11 +27,18 @@ And if not, what makes them different from steps 1, 2 and 3 in that regard?
 This all brings us to a question of **incrementality** - how do we design our systems in such way
 that we don't need to do the same thing twice?
 
-- Brute-force tree traversal
-  - Checkpointing
-  - Backtracking
-  - Re-doing
+We are going to apply the following 3-step thinking process:
 
+1. Generate a collection of concrete solutions (possibly partial) to incrementality problem
+2. Try to fit describe all solutions with a general model
+3. Use this model to fill the gaps and predict other possible solutions
+
+Brute-force tree traversal:
+- Checkpointing
+- Backtracking
+- Re-doing
+
+Example solutions:
 - Docker
 - OverlayFS
 - CRIU
