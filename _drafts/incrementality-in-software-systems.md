@@ -12,9 +12,9 @@ One typical example of the boot up sequence would be:
 2. Set up all dependencies of your project - e.g. `apt get install && pip install requirements.txt`
 3. Upload the code of your model - e.g. `git clone myproject.git`
 4. Start you execution environment - e.g. `python3 myproject/train.py`
-  a. Load up Python imports
-  b. Load the dataset from network
-5. Execute a first useful line of your code
+5. Load up Python imports
+6. Load the dataset from network
+7. Execute a first useful line of your code
 
 Not only that there is a lot of **incidental complexity** involved along the way, but it's also
 painfully slow to repeat these steps every time you change a single line of your Python code.
@@ -42,3 +42,11 @@ Example solutions:
 - Docker
 - OverlayFS
 - CRIU
+
+{% mermaid %}
+graph TD;
+  A-->B;
+  A-->C;
+  B-->D;
+  C-->D;
+{% endmermaid %}

@@ -25,3 +25,6 @@ transfer:
   settings: -av
   source: _site/
   destination: ~/Repos/akashin.me/
+plugins: [jekyll-mermaid]
+mermaid:
+  src: '/js/mermaid.min.js'
