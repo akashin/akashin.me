@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Projects</title>
-  <meta name="description" content="A Jekyll theme for content-rich sites">
+  <title>Building a compiler</title>
+  <meta name="description" content="I finally decided to embark on the journey of building a real compiler to better understandhow various pieces work under the hood. I’m particularly intereste...">
 
   <!-- Google Fonts loaded here depending on setting in _data/options.yml true loads font, blank does not-->
   
@@ -21,7 +21,7 @@
   <link rel="stylesheet" type="text/css" href="/css/tufte.css">
   <!-- <link rel="stylesheet" type="text/css" href="/css/print.css" media="print"> -->
 
-  <link rel="canonical" href="/projects/">
+  <link rel="canonical" href="/articles/20/building-a-compiler">
 
   <link rel="alternate" type="application/rss+xml" title="Tufte-Jekyll" href="/feed.xml" />
 
@@ -37,7 +37,7 @@
 
 </head>
 
-  <body class="full-width">
+  <body>
     <!--- Header and nav template site-wide -->
 <header>
     <nav class="group">
@@ -53,7 +53,7 @@
   	
 		
 		    
-		      <a class="active" href="/projects/" class="active">Projects</a>
+		      <a href="/projects/">Projects</a>
 		    
 	    
   	
@@ -80,33 +80,32 @@
 	</nav>
 </header>
 
-    <article>
-      <p><span class="newthought">Most of my</span>  projects and collaborations are available on my
-<a href="https://github.com/akashin">GitHub</a> page. Here is the list of projects that I think
-are worth sharing:</p>
+    <article class="group">
+      <h1>Building a compiler</h1>
+<p class="subtitle">February 23, 2020</p>
 
-<h2 id="my-lonely-island---browser-game"><a href="https://github.com/MekaGem/LudumDare38">My Lonely Island</a> - Browser game</h2>
+<p>I finally decided to embark on the journey of building a real compiler to better understand
+how various pieces work under the hood. I’m particularly interested in error reporting,
+intermediate representation and code optimization.</p>
 
-<p>Isometric browser game about survival on the sinking island developed during
-<a href="http://ludumdare.com/">Ludum Dare</a> 38 Game Jam.</p>
+<p>I’ll be following the guidance from <a href="http://craftinginterpreters.com">Crafting Interpreters</a>
+online book which so far proved to be quite easy to follow and full of fascinating facts from
+programming history.</p>
 
-<p>Built with JavaScript and
-<a href="https://github.com/MekaGem/LudumDare38/blob/master/createjs.com">CreateJS</a> framework for
-graphics, animations and sound.</p>
+<p>I’m planning not to follow the steps in the book too closely but rather pick the way that I
+feel makes most sense to optimize my learning and venture deeper into the topics I consider
+interesting. The first such change is using Python instead of Java for the interpreter
+implementation. As far as I can tell, this shouldn’t be a big deal, but I hope it will help me
+to get a bit more familiar with Py3 and modern tooling like static type checking.</p>
 
-<h2 id="faml---fast-machine-learning-library-for-c"><a href="https://github.com/akashin/faml">FAML</a> - FAst Machine Learning library for C++</h2>
+<p>As I go through it, I want to share some of the detours I’ll be taking on this blog, so stay tuned!</p>
 
-<p>The aim of this library is to implement various machine learning methods in fast out-of-core fashion.</p>
 
-<h2 id="oberon-interpreter"><a href="https://github.com/akashin/Oberon0-Interpreter">Oberon Interpreter</a></h2>
 
-<p>Interpreter for <a href="https://en.wikipedia.org/wiki/Oberon_(programming_language)">Oberon</a> programming
-language (very similar to Pascal) written in C++, and using Flex and Bison libraries for code
-generation.</p>
 
 
     </article>
-    <span class="print-footer">Projects - Andrei Kashin</span>
+    <span class="print-footer">Building a compiler - February 23, 2020 - Andrei Kashin</span>
     <footer>
   <hr class="slender">
   <ul class="footer-links">

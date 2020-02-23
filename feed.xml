@@ -5,9 +5,34 @@
     <description>A Jekyll theme for content-rich sites</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 02 Jul 2017 18:11:03 +0100</pubDate>
-    <lastBuildDate>Sun, 02 Jul 2017 18:11:03 +0100</lastBuildDate>
-    <generator>Jekyll v3.4.3</generator>
+    <pubDate>Sun, 23 Feb 2020 20:57:52 +0000</pubDate>
+    <lastBuildDate>Sun, 23 Feb 2020 20:57:52 +0000</lastBuildDate>
+    <generator>Jekyll v3.8.6</generator>
+    
+      <item>
+        <title>Building a compiler</title>
+        <description>&lt;p&gt;I finally decided to embark on the journey of building a real compiler to better understand
+how various pieces work under the hood. I’m particularly interested in error reporting,
+intermediate representation and code optimization.&lt;/p&gt;
+
+&lt;p&gt;I’ll be following the guidance from &lt;a href=&quot;http://craftinginterpreters.com&quot;&gt;Crafting Interpreters&lt;/a&gt;
+online book which so far proved to be quite easy to follow and full of fascinating facts from
+programming history.&lt;/p&gt;
+
+&lt;p&gt;I’m planning not to follow the steps in the book too closely but rather pick the way that I
+feel makes most sense to optimize my learning and venture deeper into the topics I consider
+interesting. The first such change is using Python instead of Java for the interpreter
+implementation. As far as I can tell, this shouldn’t be a big deal, but I hope it will help me
+to get a bit more familiar with Py3 and modern tooling like static type checking.&lt;/p&gt;
+
+&lt;p&gt;As I go through it, I want to share some of the detours I’ll be taking on this blog, so stay tuned!&lt;/p&gt;
+</description>
+        <pubDate>Sun, 23 Feb 2020 00:00:00 +0000</pubDate>
+        <link>/articles/20/building-a-compiler</link>
+        <guid isPermaLink="true">/articles/20/building-a-compiler</guid>
+        
+        
+      </item>
     
       <item>
         <title>Neat tmux alias</title>
@@ -19,16 +44,15 @@ exists, or creates a new session with this name. The motivation behind it is tha
 overhead (no conditional thinking).&lt;/p&gt;
 
 &lt;p&gt;Here is a snippet of shell code that you can add to your &lt;code class=&quot;highlighter-rouge&quot;&gt;.bashrc&lt;/code&gt;/&lt;code class=&quot;highlighter-rouge&quot;&gt;.zshrc&lt;/code&gt;/etc:&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;function &lt;/span&gt;tmx &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;function &lt;/span&gt;tmx &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;nv&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if &lt;/span&gt;tmux list-sessions | grep -q &lt;span class=&quot;s2&quot;&gt;&quot;^&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;:&quot;&lt;/span&gt;; &lt;span class=&quot;k&quot;&gt;then
-        &lt;/span&gt;tmux attach -t &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if &lt;/span&gt;tmux list-sessions | &lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-q&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;^&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;:&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then
+        &lt;/span&gt;tmux attach &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;else
-        &lt;/span&gt;tmux new-session -s &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+        &lt;/span&gt;tmux new-session &lt;span class=&quot;nt&quot;&gt;-s&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;fi&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;First, we list all available tmux sessions and then use &lt;code class=&quot;highlighter-rouge&quot;&gt;grep&lt;/code&gt; to look for the one, that has provided name.
 If this search succeeds, the return code of &lt;code class=&quot;highlighter-rouge&quot;&gt;grep&lt;/code&gt; is zero and we go to the first branch of the &lt;code class=&quot;highlighter-rouge&quot;&gt;if&lt;/code&gt;
@@ -39,16 +63,14 @@ Otherwise, the return code is non-zero and we go to the second branch that creat
 discover it :) &lt;label for=&quot;1&quot; class=&quot;margin-toggle sidenote-number&quot;&gt;&lt;/label&gt;&lt;input type=&quot;checkbox&quot; id=&quot;1&quot; class=&quot;margin-toggle&quot; /&gt;&lt;span class=&quot;sidenote&quot;&gt;what happens if there are currently no sessions? &lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;With this alias, connecting to a tmux session &lt;em&gt;Blog&lt;/em&gt; is as easy as:&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;&amp;gt; &lt;/span&gt;tmx Blog
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; tmx Blog
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;One additional big plus of this alias comes if you’re using tmux over ssh connection (and who doesn’t? :)).
 To connect or create a tmux session &lt;em&gt;Blog&lt;/em&gt; on the remote machine you can use:&lt;/p&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;&amp;gt; &lt;/span&gt;ssh &amp;lt;hostname&amp;gt; -t tmx Blog
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; ssh &amp;lt;&lt;span class=&quot;nb&quot;&gt;hostname&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-t&lt;/span&gt; tmx Blog
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;For this to work don’t forget to put &lt;code class=&quot;highlighter-rouge&quot;&gt;tmx&lt;/code&gt; alias to the top of &lt;code class=&quot;highlighter-rouge&quot;&gt;.bashrc&lt;/code&gt; if you’re using bash or to &lt;code class=&quot;highlighter-rouge&quot;&gt;.zshenv&lt;/code&gt; if you’re using zsh.&lt;/p&gt;
 

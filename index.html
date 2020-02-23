@@ -53,12 +53,6 @@
   	
 		
 		    
-		      <a href="/teaching/">Teaching</a>
-		    
-	    
-  	
-		
-		    
 		      <a href="/projects/">Projects</a>
 		    
 	    
@@ -66,6 +60,12 @@
 		
 		    
 		      <a href="/about/">About</a>
+		    
+	    
+  	
+		
+		    
+		      <a href="/teaching/">Teaching</a>
 		    
 	    
   	
@@ -86,6 +86,28 @@
           
         <li class="listing">
           <hr class="slender">
+          <a href="/articles/20/building-a-compiler"><h3 class="contrast">Building a compiler</h3></a>
+          <br><span class="smaller">February 23, 2020</span>  <br/>
+          <div><p>I finally decided to embark on the journey of building a real compiler to better understand
+how various pieces work under the hood. I’m particularly interested in error reporting,
+intermediate representation and code optimization.</p>
+
+<p>I’ll be following the guidance from <a href="http://craftinginterpreters.com">Crafting Interpreters</a>
+online book which so far proved to be quite easy to follow and full of fascinating facts from
+programming history.</p>
+
+<p>I’m planning not to follow the steps in the book too closely but rather pick the way that I
+feel makes most sense to optimize my learning and venture deeper into the topics I consider
+interesting. The first such change is using Python instead of Java for the interpreter
+implementation. As far as I can tell, this shouldn’t be a big deal, but I hope it will help me
+to get a bit more familiar with Py3 and modern tooling like static type checking.</p>
+
+<p>As I go through it, I want to share some of the detours I’ll be taking on this blog, so stay tuned!</p>
+</div> 
+        </li>
+          
+        <li class="listing">
+          <hr class="slender">
           <a href="/articles/17/useful-tmux-alias"><h3 class="contrast">Neat tmux alias</h3></a>
           <br><span class="smaller">June 25, 2017</span>  <br/>
           <div><p><span class="newthought">Trying to streamline</span>  my workflow with <a href="https://danielmiessler.com/study/tmux/">tmux</a>
@@ -96,16 +118,15 @@ exists, or creates a new session with this name. The motivation behind it is tha
 overhead (no conditional thinking).</p>
 
 <p>Here is a snippet of shell code that you can add to your <code class="highlighter-rouge">.bashrc</code>/<code class="highlighter-rouge">.zshrc</code>/etc:</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="k">function </span>tmx <span class="o">{</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">function </span>tmx <span class="o">{</span>
     <span class="nv">name</span><span class="o">=</span><span class="nv">$1</span>
-    <span class="k">if </span>tmux list-sessions | grep -q <span class="s2">"^</span><span class="k">${</span><span class="nv">name</span><span class="k">}</span><span class="s2">:"</span>; <span class="k">then
-        </span>tmux attach -t <span class="s2">"</span><span class="k">${</span><span class="nv">name</span><span class="k">}</span><span class="s2">"</span>
+    <span class="k">if </span>tmux list-sessions | <span class="nb">grep</span> <span class="nt">-q</span> <span class="s2">"^</span><span class="k">${</span><span class="nv">name</span><span class="k">}</span><span class="s2">:"</span><span class="p">;</span> <span class="k">then
+        </span>tmux attach <span class="nt">-t</span> <span class="s2">"</span><span class="k">${</span><span class="nv">name</span><span class="k">}</span><span class="s2">"</span>
     <span class="k">else
-        </span>tmux new-session -s <span class="s2">"</span><span class="k">${</span><span class="nv">name</span><span class="k">}</span><span class="s2">"</span>
+        </span>tmux new-session <span class="nt">-s</span> <span class="s2">"</span><span class="k">${</span><span class="nv">name</span><span class="k">}</span><span class="s2">"</span>
     <span class="k">fi</span>
 <span class="o">}</span>
-</code></pre>
-</div>
+</code></pre></div></div>
 
 <p>First, we list all available tmux sessions and then use <code class="highlighter-rouge">grep</code> to look for the one, that has provided name.
 If this search succeeds, the return code of <code class="highlighter-rouge">grep</code> is zero and we go to the first branch of the <code class="highlighter-rouge">if</code>
@@ -116,16 +137,14 @@ Otherwise, the return code is non-zero and we go to the second branch that creat
 discover it :) <label for="1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="1" class="margin-toggle" /><span class="sidenote">what happens if there are currently no sessions? </span></p>
 
 <p>With this alias, connecting to a tmux session <em>Blog</em> is as easy as:</p>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">&gt; </span>tmx Blog
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span> tmx Blog
+</code></pre></div></div>
 
 <p>One additional big plus of this alias comes if you’re using tmux over ssh connection (and who doesn’t? :)).
 To connect or create a tmux session <em>Blog</em> on the remote machine you can use:</p>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">&gt; </span>ssh &lt;hostname&gt; -t tmx Blog
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span> ssh &lt;<span class="nb">hostname</span><span class="o">&gt;</span> <span class="nt">-t</span> tmx Blog
+</code></pre></div></div>
 
 <p>For this to work don’t forget to put <code class="highlighter-rouge">tmx</code> alias to the top of <code class="highlighter-rouge">.bashrc</code> if you’re using bash or to <code class="highlighter-rouge">.zshenv</code> if you’re using zsh.</p>
 
@@ -170,7 +189,7 @@ for the awesome theme that is used to create this website.</p>
       
   </ul>
 <div class="credits">
-<span>&copy; 2017 &nbsp;&nbsp;ANDREI KASHIN</span></br> <br>
+<span>&copy; 2020 &nbsp;&nbsp;ANDREI KASHIN</span></br> <br>
 <span>This site created with the <a href="//github.com/clayh53/tufte-jekyll">Tufte theme for Content-centric blogging </a> in <a href="//jekyllrb.com">Jekyll</a>.</span> 
 </div>  
 </footer>
