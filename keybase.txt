@@ -1,0 +1,88 @@
+==================================================================
+https://keybase.io/akashin
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://akashin.me
+  * I am akashin (https://keybase.io/akashin) on keybase.
+  * I have a public key with fingerprint ACAB D32F C913 DC23 217B  C04B F3D0 213B 955A 6EF6
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01204eb912c6682d8e2b5d31b766ae92dbf61fa0ec4094f6c9b772cdc95d4f9e77050a",
+      "fingerprint": "acabd32fc913dc23217bc04bf3d0213b955a6ef6",
+      "host": "keybase.io",
+      "key_id": "f3d0213b955a6ef6",
+      "kid": "01016962cd41db473678f6a6849e808ef1ed8725386cf1e644cd235b526e17ede8920a",
+      "uid": "77a03f55df4fa40512bf6d012fd9e219",
+      "username": "akashin"
+    },
+    "merkle_root": {
+      "ctime": 1518682909,
+      "hash_meta": "dc277dbd2e9d38dc3b6c413aa310c9319f4c39f3fbe8d0a896c7fc099e5ffbb3",
+      "seqno": 2085312
+    },
+    "revoke": {
+      "sig_ids": [
+        "8455e3040f7fcf2aca39addd53f9537eb6a36b02af9d9cd763a9b4863030a8670f"
+      ]
+    },
+    "service": {
+      "hostname": "akashin.me",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1518682971,
+  "expire_in": 157680000,
+  "prev": "123e57639821f99a5366483ba1a3b46564fbf9f565b8260b32ac704b06cca72b",
+  "seqno": 27,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.76
+Comment: https://keybase.io/crypto
+
+yMP+AnicbVN7bBRFHG4LbaFAKAgoD6VsoGKoODuzO7tTKBQrmFIEIkoMlFx3dmba
+5cpd2bu2NnAqKhA0PFWIacO7BGmlKYRH1ECpnPJQBKQYQSjyJjxKrVx9tNS5RhI1
+7j+z88v3+37f983M4V5dYpJiW04OG/PRLF8k9ni9Wxwza3HW7AUK9bMyJX2B4uWd
+Cy9kPBD0eB2mpCtAhUDjlKjQxtiEzOSQ6gyp1MDY4gQyKrAqLMBtDRBNYJtQw4A2
+s4nONEG4YQAdWEqaIhxfPneLXMcXlLSWbVGGoLCJipgNEVQNagONCsQAVBElum5h
+LrBsLPAHoh1SHLUCfLTjlzW58XTK+x/8I91AxQRLJZrKqGYgbJgCW9jUCDeByYXK
+mWlAHZnYlv9Y02wGkU51iLlqcMZNAjt1F3fSGYYFkNB1JjRhaUBXofTNZDiCEQ5V
+EgUGuOuz5vGoO68VKHB8SihNmcddbyH3uH5/MJqtHXSiCFVXTZkmAUT6k1jPPB60
+ZKOMwjAYZZAThkxmI4ptTUWWhVRgE6QSodmICCQoNxmwTIJtQ9iAEK4LQSmSMgJ8
+vs+vpENg6kiFUoHLS/xeHh0ecPJlagElfbZiarrOEdCAkP0CyuNAxGKM6UgQHRmc
+YgthCqAlCCM2MzCyCNVMjACSY7EBhDInFB3mljh2J3n0mP5tf7TcpClFrj/ot/2F
+sl4QDBalR0MJlhVFcaWcev5m8FDHx+QNkQ0l3A04fp8MSSL/k5ehpin89SLH5R4n
+itANbAL5RcfwEkmpQsRlERETqoIQS0cYayailmohqmEda4IKInSsUxNiQJG0bsh7
+B7BtWwak/wjQkDqtfMkpY/NZwWKXK6H6Q7ldY2KTYhLi46JPJyape/KjB5XSp3cH
+fTvRGLOltqi1x4EB9yYXl7ddo93nw+zq3NIpEyd6E+6uLBnkn/b1po4NM1OaR/68
+qPeahQv3Dtvdd+exyOWxWAU7RzS1V8aVF05+Z/wzT31/JWPg3qEVB7fVLZ1w7H7F
+uIMXm5ey86XJ35S/AVNntv0yNzOnnbO8lKOrh/zx1QGE3jV6Vl2/nZk8ac6hic29
+Mt1QeWJ82w+Dp6x97+QXN5uf3r4n/VRTuL1qCTl8ZOqT58L5P4Xd6v0rjs++15b1
+7VtpBSvqPg+f2F2eF0qevqjfDeVst3WvHa6NXxs6H2LNjS89qKos21Cxvv7VlWuW
+nNu96F6PT6405Ob2Wx5XOqg1knpplP7+tRV+sLTV25j63LSVp1JCOT1vVu8LV8ZF
+9qfOmpxX8zB2T35D+MP4UZdaak9fzn52R/L8xgeNM7ZUtETKbg6puZV0ulvG2uxa
+njh1WkNeW0uwKaHL82vqwssunIhffqdm3b7+gz/+0Tm6/cKv8PfSjJpAl99wXUfI
+05p4N+th3ZiGcf3n9m0fPyGtKc9TfDw88MhnJ1flzKhd/2nrxoTtp6+93PPqi1PP
+PjH0Rn3KgAuxq3bklPBbB8+c2kUfszez61XuYveVMyOmL7h69cuMATF5vRofbt2Y
+nVixyZ60q2skUv34neHbRjpjX+hTW3wxUDl81IO69Rub3/Suy1w+4UjsnpHffXBf
+z1rd0Xo7Z/Ofw7b+Bb1ODiA=
+=CwkI
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/akashin
+
+==================================================================
